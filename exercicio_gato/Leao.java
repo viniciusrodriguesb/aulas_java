@@ -1,6 +1,6 @@
 package exercicio_gato;
 
-public class Gato {
+public class Leao {
 	private String cor;
 	private int tamanho;
 	private int peso;
@@ -34,27 +34,22 @@ public class Gato {
 
 	// Método Comer
 	void comer() {
-		System.out.println("O gato comeu a ração.");
+		System.out.println("O Leao comeu a ração.");
 	}
 
 	// Método Dormir
 	void dormir() {
-		System.out.println("O gato irá dormir agora.");
-	}
-
-	// Método brincar
-	void brincar() {
-		System.out.println("Gato está brincando");
+		System.out.println("O Leao irá dormir agora.");
 	}
 
 	// Método EmitirSom
 	void emitirSom() {
-		if (tamanho < 30) {
-			System.out.println("miau");
-		} else if (tamanho > 30 && tamanho < 60) {
-			System.out.println("miau miau");
+		if (tamanho < 50) {
+			System.out.println("grraurrr!");
+		} else if (tamanho > 50 && tamanho < 80) {
+			System.out.println("grraurrr! grraurrr!");
 		} else {
-			System.out.println("miau miau miau");
+			System.out.println("grraurrr! grraurrr! grraurrr!");
 		}
 	}
 }

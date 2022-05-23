@@ -1,9 +1,6 @@
 package correcao_exercicio03;
 
-public class Gato extends Animal {
+public class Gato extends Pet {
 
-	public String brincar() {
-		return "Gato está brincando";
-	}
 	
 }

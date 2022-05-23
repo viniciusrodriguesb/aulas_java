@@ -5,6 +5,13 @@ public class Calculadora {
 	private double valor2;
 
 	// Atributos
+	
+	public Calculadora() {}
+	
+	public Calculadora(double a, double b) {
+		this.valor1 = a;
+		this.valor2 = b;
+	}
 
 	public double getValor1() {
 		return valor1;
@@ -23,34 +30,31 @@ public class Calculadora {
 	}
 
 	// Metodos
-	// Adicionar as ações da classe
-	public double som(double a, double b) {
-		this.valor1 = a;
-		this.valor2 = b;
-
+	public double som() {
 		return valor1 + valor2;
+	}
+	
+	public double som(double a, double b) {
+		return a + b;
 	}
 
 	public double sub(double a, double b) {
-		this.valor1 = a;
-		this.valor2 = b;
-
-		return valor1 - valor2;
+		return a - b;
 
 	}
 
 	public double div(double a, double b) {
-		this.valor1 = a;
-		this.valor2 = b;
+		double retorno;
 
-		return valor1 / valor2;
-
+		if (b == 0) {
+			retorno = b;
+		} else {
+			retorno = a / b;
+		}
+		return retorno;
 	}
 
 	public double mult(double a, double b) {
-		this.valor1 = a;
-		this.valor2 = b;
-
-		return valor1 * valor2;
+		return a * b;
 	}
 }
